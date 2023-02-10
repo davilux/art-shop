@@ -2,6 +2,7 @@ import React, {useEffect} from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { getAllProducts } from '../redux/reducers/productsSlice'
 import { v4 as uuidv4 } from 'uuid';
+import SingleProduct from './SingleProduct';
 
 const AllProducts = () => {
   const dispatch = useDispatch();
@@ -22,7 +23,7 @@ const AllProducts = () => {
       <ul className="container">
         {allProducts.map((product) => (
           <div className="card" key={uuidv4()}>
-            {product.name}
+            <SingleProduct product={product}/>
           </div>
         ))}
       </ul>
