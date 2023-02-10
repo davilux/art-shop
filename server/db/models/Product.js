@@ -14,13 +14,14 @@ const Product = db.define('product', {
     type: Sequelize.DECIMAL,
     allowNull: false,
   },
-  inventoryQty: {
+  quantityInStock: {
     type: Sequelize.INTEGER,
     allowNull: false,
     defaultValue : 0,
   },
   photoUrl: {
     type: Sequelize.TEXT,
+    defaultValue : 'img/blackheart.png'
   },
 })
 

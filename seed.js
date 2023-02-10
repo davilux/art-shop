@@ -8,6 +8,7 @@ const seed = async () => {
     name : "Belay Me Sticker",
     description : "Candy heart vinyl sticker with words 'Belay Me'.",
     price : 3.99,
+    quantityInStock: 5
   })
 }
 
