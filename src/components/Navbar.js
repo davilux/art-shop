@@ -6,6 +6,7 @@ import Home from './Home'
 import SingleProduct from './SingleProduct';
 import Cart from './Cart';
 import Login from './Login';
+import NotFound from './NotFound'
 
 const Navbar = () => {
   return (
@@ -22,8 +23,7 @@ const Navbar = () => {
         <Route path="/cart" element={<Cart/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/" element={<Home/>} />
-        <Route path="*" element={<Home/>} />
-        {/* change this to 404 component ^ */}
+        <Route path="*" element={<NotFound/>} />
       </Routes>
     </Router>
   );
