@@ -1,4 +1,4 @@
-const PORT = process.env.PORT || 3030;
+const PORT = 3030;
 const app = require('./app')
 
 const init = async () => {
