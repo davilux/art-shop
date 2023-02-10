@@ -22,6 +22,8 @@ const Navbar = () => {
         <Route path="/cart" element={<Cart/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/" element={<Home/>} />
+        <Route path="*" element={<Home/>} />
+        {/* change this to 404 component ^ */}
       </Routes>
     </Router>
   );
